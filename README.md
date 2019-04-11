@@ -2,7 +2,7 @@
 This app converts the currency of 156 countries.
 
 ## About 
-This app uses the API from CurrencyConverterApi.com, which converts the currency of 156 countries. The user selects the countries currency, that they would like to convert from & to, enter an amount, which will be automatically converted. 
+This app uses an API from CurrencyConverterApi.com, which converts the currency of 156 countries. The user selects the countries currency, that they would like to convert from & to, enter an amount, which will be automatically converted. 
 
 ## Development. 
 Developing the I app, I used Xcode storyboard to lay out the design. I used MVVM design pattern, create Rest Api call function, used Codable to parse the retrieved JSON and wrote Unit Tests. 
