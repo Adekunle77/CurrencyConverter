@@ -2,10 +2,10 @@
 This app converts the currency of 156 countries.
 
 ## About 
-This app uses an API from CurrencyConverterApi.com, which converts the currency of 156 countries. The user selects the countries currency, that they would like to convert from & to, enter an amount, which will be automatically converted. 
+This app uses an API from CurrencyConverterApi.com, which converts the currency of 156 countries. The user selects the country's currency, that they would like to convert from & to, enter an amount, which will automatically get converted. 
 
 ## Development. 
-Developing the I app, I used Xcode storyboard to lay out the design. I used MVVM design pattern, create Rest Api call function, used Codable to parse the retrieved JSON and wrote Unit Tests. 
+Developing the I app, I used Xcode's storyboard for lay out of the design. I used MVVM design pattern, wrote a rest Api call function, used Codable to parse the retrieved JSON, and wrote Unit Tests. 
 
 ## MVVM
 I decided to use MVVM design pattern, because I like how it separates the logic away from the view. Plus, I intended to add some additional features soon, to the app. I feel that it would be easy to add extra classes and code, using this design pattern. 
