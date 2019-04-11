@@ -18,68 +18,11 @@ The App makes 2 rest API requests. The first request retrieves data about each c
 
 Rather than making serval functions, that make API request separately, I create one function, that has an enum parameter. When calling the function an enum case is selected, depending on which API url that is needed. 
 
-``` struct Endpoint {
+
+```Swift
+struct Endpoint {
     let path: Path
     let queryItems: [URLQueryItem]
-<<<<<<< HEAD
-    }
-    
-    enum Path: String {
-    case convert = "/api/v6/convert"
-    case country = "/api/v6/countries"
-    case currencies = "/api/v6/currencies"
-    }
-    
-    extension Endpoint {
-    static func convert(currencies query: String) -> Endpoint {
-            return Endpoint(
-            path: .convert,
-            queryItems: [
-                            URLQueryItem(name: "q", value: query),
-                                            URLQueryItem(name: "compact", value: "ultra"),
-                                                            URLQueryItem(name: "apiKey", value: ""),
-                                                                            
-                                                                                            ]
-                                                                                                        )
-                                                                                                            }
-                                                                                                            }
-                                                                                                            
-                                                                                                            extension Endpoint {
-                                                                                                                static func country() -> Endpoint {
-                                                                                                                        return Endpoint(
-                                                                                                                                    path: .country,
-                                                                                                                                                queryItems: [
-                                                                                                                                                                URLQueryItem(name: "apiKey", value: ""),
-                                                                                                                                                                            ]
-                                                                                                                                                                                    )
-                                                                                                                                                                                        }
-                                                                                                                                                                                        }
-                                                                                                                                                                                        
-                                                                                                                                                                                        extension Endpoint {
-                                                                                                                                                                                            static func currencies() -> Endpoint {
-                                                                                                                                                                                                    return Endpoint(
-                                                                                                                                                                                                                path: .currencies,
-                                                                                                                                                                                                                            queryItems: [
-                                                                                                                                                                                                                                            URLQueryItem(name: "apiKey", value: ""),
-                                                                                                                                                                                                                                                            ]
-                                                                                                                                                                                                                                                                    )
-                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        extension Endpoint {
-                                                                                                                                                                                                                                                                            var url: URL? {
-                                                                                                                                                                                                                                                                                    var components = URLComponents()
-                                                                                                                                                                                                                                                                                            components.scheme = "https"
-                                                                                                                                                                                                                                                                                                    components.host = "free.currencyconverterapi.com"
-                                                                                                                                                                                                                                                                                                            components.path = path.rawValue
-                                                                                                                                                                                                                                                                                                                    components.queryItems = queryItems
-                                                                                                                                                                                                                                                                                                                            return components.url
-                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                ```
-                                                                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                                                                                
-=======
 }
 
 enum Path: String {
@@ -95,7 +38,7 @@ extension Endpoint {
             queryItems: [
                 URLQueryItem(name: "q", value: query),
                 URLQueryItem(name: "compact", value: "ultra"),
-                URLQueryItem(name: "apiKey", value: ""),
+                URLQueryItem(name: "apiKey", value: "fe49ce3446ac2d67d7c2"),
                 
                 ]
             )
@@ -107,7 +50,7 @@ extension Endpoint {
         return Endpoint(
             path: .country,
             queryItems: [
-                URLQueryItem(name: "apiKey", value: ""),
+                URLQueryItem(name: "apiKey", value: "fe49ce3446ac2d67d7c2"),
             ]
         )
     }
@@ -118,7 +61,7 @@ extension Endpoint {
         return Endpoint(
             path: .currencies,
             queryItems: [
-                URLQueryItem(name: "apiKey", value: ""),
+                URLQueryItem(name: "apiKey", value: "fe49ce3446ac2d67d7c2"),
                 ]
         )
     }
@@ -136,5 +79,3 @@ extension Endpoint {
 }
 ```
 
-
->>>>>>> 14e1a6fa68e3e7a6d87baa4a85f59b0465ba31d2
