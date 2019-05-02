@@ -8,7 +8,7 @@ This app uses an API from CurrencyConverterApi.com, which converts the currency 
 Developing the I app, I used Xcode's storyboard for lay out of the design. I used MVVM design pattern, wrote a rest Api call function, used Codable to parse the retrieved JSON, and wrote Unit Tests. 
 
 ## MVVM
-I decided to use MVVM design pattern, because I like how it separates the logic away from the view. Plus, I intended to add some additional features soon, to the app. I feel that it would be easy to add extra classes and code, using this design pattern. 
+I decided to use MVVM design pattern, because I like how it separates the logic away from the view. Plus, I intended to add some additional features soon to the app. I feel that it would be easy to add extra classes and code, using this design pattern. 
 
 ## Unit Testing 
 I have written Unit Tests for this app. I wrote a mock of the api request function, I done this to test 3 functions that parsed data, that is retrieved from the api request.
