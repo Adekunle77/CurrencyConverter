@@ -38,7 +38,6 @@ struct CountriesInfo: Codable {
     }
 }
 
-
 extension Currencies: Equatable {
     static func == (lhs: Currencies, rhs: Currencies) -> Bool {
         let areEqual = lhs.results == rhs.results &&
