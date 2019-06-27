@@ -1,4 +1,4 @@
-# Currency Convertor
+# Currency Converter
 This app converts the currency of 156 countries.
 
 ## About 
