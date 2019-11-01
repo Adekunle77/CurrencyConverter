@@ -61,7 +61,7 @@ extension Endpoint {
         return Endpoint(
             path: .currencies,
             queryItems: [
-                URLQueryItem(name: "apiKey", value: "fe49ce3446ac2d67d7c2"),
+                URLQueryItem(name: "apiKey", value: "*******************"),
                 ]
         )
     }
