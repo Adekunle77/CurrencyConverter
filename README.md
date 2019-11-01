@@ -38,7 +38,7 @@ extension Endpoint {
             queryItems: [
                 URLQueryItem(name: "q", value: query),
                 URLQueryItem(name: "compact", value: "ultra"),
-                URLQueryItem(name: "apiKey", value: "fe49ce3446ac2d67d7c2"),
+                URLQueryItem(name: "apiKey", value: "*******************"),
                 
                 ]
             )
@@ -50,7 +50,7 @@ extension Endpoint {
         return Endpoint(
             path: .country,
             queryItems: [
-                URLQueryItem(name: "apiKey", value: "fe49ce3446ac2d67d7c2"),
+                URLQueryItem(name: "apiKey", value: "*******************"),
             ]
         )
     }
